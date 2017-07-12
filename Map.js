@@ -68,26 +68,6 @@ Map.prototype.desenhar = function (ctx, img) {
 
 };
 
-/*Map.prototype.colidiuCom = function (alvo, resolveColisao) {
-    for (var i = 0; i < this.tesouros.length; i++) {
-      if(this.tesouros[i].colidiuCom(alvo)){
-        resolveColisao(this.tesouros[i], alvo);
-      }
-    }
-};
-
-Map.prototype.colidiuComTesouro = function(pc){
-  for(var i = this.tesouros.length-1; i>=0; i--){
-
-    this.colidiuCom(pc,
-        function(tesouro){
-            tesouro.visivel = true;
-            console.log("aqui");
-        }
-      );
-  }
-};*/
-
 Map.prototype.showInformations = function(ctx){
   
   // -- Minas --
@@ -150,13 +130,6 @@ Map.prototype.setCells = function (newCells) {
           break;
         case 2:
           this.cells[i][j] = 2;
-          //console.log(i);
-          //console.log(j);
-          /*newEnemy = new Sprite();
-          newEnemy.images = this.images;
-          newEnemy.y = (i+0.5)*this.SIZE;
-          newEnemy.x = (j+0.5)*this.SIZE;
-          this.enemies.push(newEnemy);*/
           break;
         case 3:
           this.cells[i][j] = 3;
